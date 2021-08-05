@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title>Painel TV AO VIVO - Exemplo de Tag HTML5 para exibir video em flash</title>
+</head>
+<body>
+<object width="425" height="350">
+<param name="movie" value="http://www.youtube.com/v/tIBxavsiHzM" />
+<embed src="http://www.youtube.com/v/tIBxavsiHzM" type="application/x-shockwave-flash" width="425" height="350" />
+</object>
+</body>
+</html>

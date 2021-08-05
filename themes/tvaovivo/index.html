@@ -1,0 +1,46 @@
+
+
+<div id="layout-content">
+
+<iframe width="1000" height="700" loop autoplay controls loop src="https://www.youtube.com/embed/ty97y3u6vJU?controls=0;start=3=pt&cc_lang_pref=pt&cc_load_policy=0&fs=0&mute=1&controls=1&autoplay=1&loop=1=autoplay=1&loop=1&autopause=0?background=1?silenciado= 1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div id="barra-lateral">
+		<div id="senha-container"> 
+			<div id="mensagem">
+				<span>{{ ultima.mensagem }}</span>
+			</div>
+			<div class="row">
+				<div>
+					<div id="senha" class="blink">
+						<span>{{ ultima.texto }}</span>
+					</div>
+				</div>
+				<div>
+
+					<div id="local" class="local">
+						<span>{{ ultima.local }}</span>
+					</div>
+					<div id="local-numero" class="numero-local">
+						<span>{{ ultima.numeroLocal }}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="separador"></div>
+		<div id="relogio-container">
+			<iframe id="relogio" src="themes/tvaovivo/relogio.html" frameborder="0"></iframe>
+		</div>
+	</div>
+	
+    <div id="historico">
+        <div class="senhas">
+            <div class="col-sm-3 senha-chamada {{ senha.styleClass }}" ng-repeat="senha in historico | limitTo: 4">
+                <div class="senha">
+                    <span>{{ senha.texto }}</span>
+                </div>
+                <div class="local">
+                    <span>{{ senha.local }}: {{ senha.numeroLocal }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

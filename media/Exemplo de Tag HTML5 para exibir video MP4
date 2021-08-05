@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title>Painel TV AO VIVO - Exemplo de Tag HTML5 para exibir video em mp4</title>
+</head>
+<body>
+<video width="320" height="240" controls="controls" autoplay="autoplay">
+<source src="/opt/lampp/htdocs/sga/paineltv/media/teste1.mp4" type="video/mp4">
+<object data="" width="320" height="240">
+<embed width="320" height="240" src="/opt/lampp/htdocs/sga/paineltv/media/teste1.mp4">
+</object>
+</video>
+</body>
+</html>
